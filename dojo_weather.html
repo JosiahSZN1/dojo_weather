@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dojo_weather.css">
+    <script src="./dojo_weather.js" defer></script>
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <div id="navbar">
+        <h1>DojoWeather</h1>
+        <div id="cities">
+            <a onclick="alert('Loading weather report...')" href="#">Burbank</a>
+            <a onclick="alert('Loading weather report...')" href="#">Chicago</a>
+            <a onclick="alert('Loading weather report...')" href="#">Dallas</a>
+        </div>
+    </div>
+    <div id="main-content">
+        <div id="header">
+            <h2>San Jose</h2>
+            <div id="convert">
+                <p>show temperature in</p>
+                <select onchange="convertTemp(this)" name="#" id="#">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </div>
+        </div>
+        <div id="forecast">
+            <div class="day">
+                <h3>Today</h3>
+                <img src="./assets/some_rain.png" alt="some_rain">
+                <p>some rain</p>
+                <div class="hi-lo">
+                    <h3 class="hi"><span>24</span>°</h3>
+                    <h3 class="lo"><span>18</span>°</h3>
+                </div>
+            </div>
+            <div class="day">
+                <h3>Tomorrow</h3>
+                <img src="./assets/some_sun.png" alt="some_sun">
+                <p>some sun</p>
+                <div class="hi-lo">
+                    <h3 class="hi"><span>27</span>°</h3>
+                    <h3 class="lo"><span>19</span>°</h3>
+                </div>
+            </div>
+            <div class="day">
+                <h3>Friday</h3>
+                <img src="./assets/some_clouds.png" alt="some_clouds">
+                <p>some clouds</p>
+                <div class="hi-lo">
+                    <h3 class="hi"><span>21</span>°</h3>
+                    <h3 class="lo"><span>16</span>°</h3>
+                </div>
+            </div>
+            <div class="day">
+                <h3>Saturday</h3>
+                <img src="./assets/some_sun.png" alt="some_sun">
+                <p>some sun</p>
+                <div class="hi-lo">
+                    <h3 class="hi"><span>26</span>°</h3>
+                    <h3 class="lo"><span>21</span>°</h3>
+                </div>
+            </div>
+        </div>
+        <div id="auth">
+            <img src="./assets/cookie.png" alt="cookie">
+            <div id="message">
+                <p id="headline">Stop! Cookie time</p>
+                <p id="message-main">We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button onclick="hide()">I Accept</button>
+        </div>
+    </div>
+</body>
+</html>
